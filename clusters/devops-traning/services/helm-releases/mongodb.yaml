@@ -4,7 +4,7 @@ metadata:
   name: mongodb
   namespace: devops-module3
 spec:
-  interval: 5m
+  interval: 3m
   chart:
     spec:
       chart: mongodb
@@ -13,7 +13,6 @@ spec:
         kind: HelmRepository
         name: bitnami
         namespace: flux-system
-      interval: 5m
   values:
     auth:
       rootPassword: 0yCQVo8llCD93iU
