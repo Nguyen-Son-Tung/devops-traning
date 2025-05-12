@@ -8,19 +8,18 @@ spec:
   chart:
     spec:
       chart: mongodb
+      version: 16.5.6 # https://artifacthub.io/packages/helm/bitnami/mongodb
       sourceRef:
         kind: HelmRepository
         name: bitnami
         namespace: flux-system
-      version: 16.5.6  # https://artifacthub.io/packages/helm/bitnami/mongodb
-  interval: 5m
+      interval: 5m
   values:
     auth:
       rootPassword: 0yCQVo8llCD93iU
       username: tung
       password: XOQCG4RP1L5Dpzy
       database: devops-training
-    architecture: standalone
     persistence:
       enabled: true
       size: 3Gi
