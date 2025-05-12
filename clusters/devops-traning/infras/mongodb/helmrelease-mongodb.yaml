@@ -4,7 +4,7 @@ metadata:
   name: mongodb
   namespace: devops-module3
 spec:
-  releaseName: mongodb
+  interval: 5m
   chart:
     spec:
       chart: mongodb
