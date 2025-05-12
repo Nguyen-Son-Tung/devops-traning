@@ -10,7 +10,7 @@ spec:
       chart: mongodb
       version: 16.5.6 # https://artifacthub.io/packages/helm/bitnami/mongodb
       sourceRef:
-        kind: OCIRepository
+        kind: HelmRepository
         name: bitnami-oci
         namespace: flux-system
   values:

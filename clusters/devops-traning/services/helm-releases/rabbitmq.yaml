@@ -10,7 +10,7 @@ spec:
       chart: rabbitmq
       version: 16.0.2 # https://artifacthub.io/packages/helm/bitnami/rabbitmq
       sourceRef:
-        kind: OCIRepository
+        kind: HelmRepository
         name: bitnami-oci
         namespace: flux-system
   values:
